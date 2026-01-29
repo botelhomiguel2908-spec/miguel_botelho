@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>2º Trimestre – CSS</title>
+    <title>2º Trimestre – Seletores CSS</title>
     <style>
         * {
             margin: 0;
@@ -88,44 +88,72 @@
 
     <!-- Conteúdo -->
     <section class="conteudo">
-        <h1>Introdução ao CSS</h1>
+        <h1>Seletores CSS</h1>
 
         <p>
-            CSS (Cascading Style Sheets) é uma linguagem utilizada para 
-            definir o estilo de documentos HTML. Ele permite controlar 
-            cores, fontes, espaçamentos, posicionamentos e diversos 
-            aspectos visuais de uma página web.
+            Os seletores CSS são utilizados para identificar quais elementos 
+            HTML irão receber determinado estilo. Eles permitem aplicar regras 
+            de formatação de forma precisa e organizada.
         </p>
 
         <p>
-            Com CSS, é possível separar o conteúdo da página (HTML) da 
-            sua apresentação visual, tornando o código mais organizado e 
-            facilitando a manutenção.
+            Existem vários tipos de seletores em CSS, sendo os mais comuns os 
+            seletores de elemento, de classe e de ID.
         </p>
 
-        <p>
-            Existem três formas principais de aplicar CSS a uma página HTML:
-        </p>
-
-        <ul>
-            <li><strong>Inline:</strong> diretamente no elemento HTML com o atributo <code>style</code>.</li>
-            <li><strong>Interno:</strong> dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho do HTML.</li>
-            <li><strong>Externo:</strong> em um ficheiro <code>.css</code> separado, ligado ao HTML com <code>&lt;link&gt;</code>.</li>
-        </ul>
-
-        <p>Exemplo de CSS interno para mudar a cor do texto:</p>
+        <p><strong>Seletor de Elemento:</strong> seleciona todos os elementos HTML de um mesmo tipo.</p>
 
         <div class="codigo">
             p {<br>
-            &nbsp;&nbsp;color: blue;<br>
-            &nbsp;&nbsp;font-size: 16px;<br>
+            &nbsp;&nbsp;color: green;<br>
             }
         </div>
 
         <p>
-            CSS é essencial para tornar páginas web visualmente atraentes e 
-            melhorar a experiência do usuário, permitindo designs responsivos 
-            e modernos.
+            O código acima aplica a cor verde a todos os parágrafos da página.
+        </p>
+
+        <p><strong>Seletor de Classe:</strong> utiliza o símbolo <code>.</code> e pode ser reutilizado em vários elementos.</p>
+
+        <div class="codigo">
+            .destaque {<br>
+            &nbsp;&nbsp;background-color: yellow;<br>
+            &nbsp;&nbsp;padding: 10px;<br>
+            }
+        </div>
+
+        <p>
+            Classes são ideais quando se deseja aplicar o mesmo estilo a vários 
+            elementos diferentes.
+        </p>
+
+        <p><strong>Seletor de ID:</strong> utiliza o símbolo <code>#</code> e deve ser único na página.</p>
+
+        <div class="codigo">
+            #titulo {<br>
+            &nbsp;&nbsp;color: blue;<br>
+            &nbsp;&nbsp;text-align: center;<br>
+            }
+        </div>
+
+        <p>
+            O ID é usado quando se pretende estilizar um elemento específico.
+        </p>
+
+        <p>
+            Além destes, existem outros seletores importantes:
+        </p>
+
+        <ul>
+            <li><strong>Seletor Universal (*):</strong> seleciona todos os elementos da página.</li>
+            <li><strong>Seletor Descendente:</strong> seleciona elementos dentro de outros.</li>
+            <li><strong>Seletor de Atributo:</strong> seleciona elementos com atributos específicos.</li>
+            <li><strong>Pseudo-classes:</strong> definem estilos para estados especiais, como <code>:hover</code>.</li>
+        </ul>
+
+        <p>
+            O uso correto dos seletores CSS torna o código mais limpo, organizado 
+            e facilita a manutenção e evolução do site.
         </p>
     </section>
 
